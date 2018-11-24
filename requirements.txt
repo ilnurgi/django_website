@@ -1,2 +1,4 @@
 django
 git+git://github.com/ilnurgi/django_nginx_access
+pyyaml
+psycopg2
