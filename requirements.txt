@@ -1,4 +1,5 @@
 django
 git+git://github.com/ilnurgi/django_nginx_access
+git+git://github.com/ilnurgi/django_gii_blog
 pyyaml
 psycopg2

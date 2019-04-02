@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     'django_website',
     'django_nginx_access',
+    'django_gii_blog',
 ]
 
 MIDDLEWARE = [
