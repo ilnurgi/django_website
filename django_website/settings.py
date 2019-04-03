@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import sys
 
 import yaml
 
@@ -142,3 +143,8 @@ settings_json = os.path.join(BASE_DIR, 'django_website', 'settings.yaml')
 if os.path.exists(settings_json):
     yaml_data = yaml.safe_load(open(settings_json))
     globals().update(yaml_data)
+
+if DEBUG:
+    applications_path = os.path.dirname(BASE_DIR)
+    sys.path.append(os.path.join(applications_path, 'django_gii_blog'))
+    sys.path.append(os.path.join(applications_path, 'django_nginx_access'))
