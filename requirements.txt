@@ -2,7 +2,5 @@ django
 pyyaml
 psycopg2
 gunicorn
-markdown
-pygments
 git+git://github.com/ilnurgi/django_nginx_access
 git+git://github.com/ilnurgi/django_gii_blog
