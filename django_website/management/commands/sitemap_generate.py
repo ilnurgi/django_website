@@ -127,3 +127,8 @@ class Command(BaseCommand):
         ):
             sitemap_data = sitemap_template.render(self.get_context(host, posts, docs, post_max_date, docs_max_date))
             open(os.path.join(self.SITEMAP_DIR, self.SITEMAP_NAME.format(host=host)), 'w').write(sitemap_data)
+
+        mail_admins(
+            'DJANGO_WEBSITE_SITEMAP_GENERATOR',
+            'generated'
+        )
