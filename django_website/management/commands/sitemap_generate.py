@@ -35,7 +35,7 @@ class Command(BaseCommand):
     геренатор
     """
 
-    SITEMAP_NAME = 'sitemap-{host}.xml'
+    SITEMAP_NAME = 'sitemap_{host}.xml'
     SITEMAP_DIR = settings.MEDIA_ROOT
     DOCS_DIR = settings.DOCS_DIR
 
