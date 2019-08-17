@@ -1,5 +1,7 @@
 *.yaml
 .idea/
+.env/
+.vscode/
 __pycache__/
 static/
 media/
