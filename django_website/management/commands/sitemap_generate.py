@@ -75,13 +75,13 @@ class Command(BaseCommand):
                 'location': 'http://{host}/blog/'.format(host=host),
                 'lastmod': post_max_date,
                 'changefreq': 'monthly',
-                'priority': 0.5,
+                'priority': '0.5',
             },
             {
                 'location': 'http://{host}/docs/index.html'.format(host=host),
                 'lastmod': docs_max_date,
                 'changefreq': 'monthly',
-                'priority': 0.5,
+                'priority': '0.5',
             },
         ]
         url_set.extend(
@@ -89,7 +89,7 @@ class Command(BaseCommand):
                 'location': 'http://{host}/blog/{post_id}'.format(host=host, post_id=post.id),
                 'lastmod': post.updated,
                 'changefreq': 'monthly',
-                'priority': 0.5,
+                'priority': '0.5',
             }
             for post in posts
         )
@@ -98,7 +98,7 @@ class Command(BaseCommand):
                 'location': 'http://{host}/docs/{file_path}'.format(host=host, file_path=doc['file_path']),
                 'lastmod': doc['updated'],
                 'changefreq': 'monthly',
-                'priority': 0.5,
+                'priority': '0.5',
             }
             for doc in docs
         )
