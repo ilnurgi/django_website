@@ -10,7 +10,7 @@ from django.core.management import BaseCommand
 from django.template import loader as template_loader
 
 
-from django_gii_blog.models import Post
+from gii_django_blog.models import Post
 
 
 def error(func):

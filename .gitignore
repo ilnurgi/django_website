@@ -1,6 +1,6 @@
 *.yaml
 .idea/
-.env/
+venv/
 .vscode/
 __pycache__/
 static/

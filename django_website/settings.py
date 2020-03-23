@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
     'django_website',
     'django_nginx_access',
-    'django_gii_blog',
+    'gii_django_blog',
     'django_gii_pcmark',
 ]
 
@@ -151,6 +151,6 @@ if os.path.exists(settings_json):
 
 if DEBUG:
     applications_path = os.path.dirname(BASE_DIR)
-    sys.path.append(os.path.join(applications_path, 'django_gii_blog'))
+    sys.path.append(os.path.join(applications_path, 'gii_django_blog'))
     sys.path.append(os.path.join(applications_path, 'django_nginx_access'))
     sys.path.append(os.path.join(applications_path, 'django_gii_pcmark'))
