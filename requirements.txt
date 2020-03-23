@@ -3,5 +3,5 @@ pyyaml
 psycopg2
 gunicorn
 git+git://github.com/ilnurgi/django_nginx_access
-git+git://github.com/ilnurgi/django_gii_blog
+git+git://github.com/ilnurgi/gii_django_blog
 git+git://github.com/ilnurgi/django_gii_pcmark
