@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
 
-    'django_website',
+    'gii_django_website',
     'django_nginx_access',
     'gii_django_blog',
     'django_gii_pcmark',
