@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'django_website.urls'
+ROOT_URLCONF = 'gii_django_website.urls'
 
 TEMPLATES = [
     {
@@ -143,7 +143,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 ADMINS = []
 
-settings_json = os.path.join(BASE_DIR, 'django_website', 'settings.yaml')
+settings_json = os.path.join(BASE_DIR, 'gii_django_website', 'settings.yaml')
 
 if os.path.exists(settings_json):
     yaml_data = yaml.safe_load(open(settings_json))
